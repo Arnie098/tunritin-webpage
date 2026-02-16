@@ -2,3 +2,8 @@ config.js
 .DS_Store
 node_modules/
 dist/
+.env
+send_email.py
+customer_email.html
+recipients.txt
+test_smtp.py
