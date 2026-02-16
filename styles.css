@@ -1,0 +1,250 @@
+/* Turnitin login page - match screenshot: white page, blue form card */
+body.saBody {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background: #fff;
+    min-height: 100vh;
+}
+
+div[align="center"] {
+    padding: 24px 16px;
+}
+
+.saPageContent {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.saLogo {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.saLogo a img {
+    display: block;
+    margin: 0 auto;
+    max-width: 180px;
+    height: auto;
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Blue form card */
+.saFormCard {
+    background: #1e75bb;
+    border-radius: 4px;
+    padding: 30px 40px 25px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Form inside blue card */
+#ibox_form {
+    max-width: 100%;
+}
+
+.saFormHeaderProd {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 22px;
+    text-align: left;
+}
+
+.ip_forms {
+    text-align: left;
+}
+
+.ip_form_row {
+    margin-bottom: 18px;
+}
+
+.ip_form_row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ip_text_field {
+    width: 100%;
+}
+
+.ip_valid_inidicator {
+    position: relative;
+    display: block;
+}
+
+.ip_valid_inidicator input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+#email {
+    border: 1.5px solid #000;
+}
+
+#password {
+    background: #e8f0fe;
+}
+
+.ip_valid_inidicator input:focus {
+    outline: none;
+}
+
+/* Log in button - light blue */
+.saSubmit {
+    padding-top: 5px;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.saSubmit .submit {
+    width: auto;
+    min-width: 70px;
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: #1e75bb;
+    border: 1px solid white;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.saSubmit .submit:hover {
+    background: #5296d6;
+}
+
+/* Or divider - thin white lines */
+.sso-divider {
+    margin: 25px 0;
+    text-align: center;
+    position: relative;
+}
+
+.sso-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(50% - 25px);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.sso-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(50% - 25px);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.sso-divider span {
+    position: relative;
+    background: #1c75bc;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sso-error-message {
+    background: #fff;
+    color: #d11313;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 1px solid #d11313;
+}
+
+/* SSO buttons */
+.sso-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.sso-buttons a {
+    flex: 0 1 calc(50% - 6px);
+    display: block;
+    line-height: 0;
+}
+
+.sso-buttons a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/* Links and text inside blue card */
+#ibox_form_body p {
+    margin: 15px 0 0;
+    font-size: 13.5px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+#ibox_form_body p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#ibox_form_body p a:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.new-user-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+/* Footer - outside blue card */
+.saFooter {
+    margin-top: 30px;
+    padding-top: 5px;
+}
+
+.saFooter div {
+    font-size: 11px;
+    color: #333;
+}
+
+.saFooter a {
+    color: #007bc1;
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    .saFormCard {
+        padding: 24px 20px 20px;
+    }
+}
