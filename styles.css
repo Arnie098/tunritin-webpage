@@ -22,16 +22,16 @@ div[align="center"] {
 }
 
 .saLogo {
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 35px 0 30px;
 }
 
 .saLogo a img {
     display: block;
     margin: 0 auto;
-    max-width: 180px;
+    width: 155px;
     height: auto;
     border: 0;
+    transition: opacity 0.2s;
 }
 
 .clear {
