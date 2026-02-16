@@ -63,7 +63,8 @@
             }
         }
 
-        if (googleBtn) googleBtn.addEventListener('click', showSsoError);
-        if (cleverBtn) cleverBtn.addEventListener('click', showSsoError);
+        // Removing redundant SSO error handlers to allow direct redirect
+        // if (googleBtn) googleBtn.addEventListener('click', showSsoError);
+        // if (cleverBtn) cleverBtn.addEventListener('click', showSsoError);
     });
 })();
