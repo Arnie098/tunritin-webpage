@@ -1,9 +1,25 @@
-config.js
-.DS_Store
-node_modules/
-dist/
+# Credentials
 .env
-send_email.py
-customer_email.html
+config.js
+
+# Logs and Progress
+sending.log
+sent_recipients.txt
+.send_progress*
+.send_progress_offset
+
+# Data Files (Private)
+edu.txt
 recipients.txt
-test_smtp.py
+dummy_recipients.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# Local/Temporary
+*.tmp
+n8n_*.json
+sync_to_supabase.py
+setup_supabase.sql
+verify_*.py

@@ -32,16 +32,30 @@ python -m SimpleHTTPServer 8000
 ```
 Then open http://localhost:8000
 
+## Email Automation (Python + Supabase)
+
+This project includes a powerful bulk email sender that integrates with SendGrid and Supabase for reliable, stateful delivery.
+
+### Features
+- **Supabase Backend**: Manages 464k+ recipients with ease.
+- **Auto-Tracking**: Automatically marks recipients as sent in the database.
+- **SendGrid Integration**: Uses high-delivery SendGrid v3 API.
+- **Daily Throttling**: Automatically sends 100 emails every 24 hours to stay within Free Plan limits.
+
+### Getting Started
+1.  **Configure Env**: Add your keys to a `.env` file (see `.env.example`).
+2.  **Run Locally**: `python send_email.py`
+3.  **Deploy**: Push to GitHub and add your secrets to Actions for 24h automated sending.
+
 ## Project structure
 
 | File | Purpose |
 |------|--------|
 | `index.html` | Login page markup and structure |
-| `styles.css` | Layout and styling |
-| `script.js` | Form display and basic validation |
-| `turnitin-login-logo.svg` | Turnitin-style logo |
+| `send_email.py` | Main automation script |
+| `.github/workflows/` | Daily automation trigger |
+| `customer_email.html`| Email template |
 
-## Notes
+## Security Note
 
-- The form does not submit to a real backend; it only runs client-side validation.
-- SSO links are placeholders (`href="#"`); replace with real SSO URLs when integrating.
+Sensitive files like `.env`, `config.js`, and private recipient lists are explicitly ignored via `.gitignore`. Always use GitHub Secrets for cloud deployment.
