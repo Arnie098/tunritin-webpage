@@ -5,7 +5,6 @@ on:
     # Runs at 09:00 UTC (5:00 PM PHT) every day
     - cron: '0 9 * * *'
   workflow_dispatch:
-    # This allow manual triggering from the GitHub Actions tab
 
 jobs:
   send-emails:
@@ -29,6 +28,10 @@ jobs:
         env:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          MAILTRAP_API_TOKEN: ${{ secrets.MAILTRAP_API_TOKEN }}
+          MAILTRAP_SENDER_EMAIL: ${{ secrets.MAILTRAP_SENDER_EMAIL }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           IS_GITHUB_ACTIONS: "true"
